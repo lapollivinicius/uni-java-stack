@@ -2,7 +2,7 @@ package OOP;
 
 public class Car {
 
-  // atribuites to object car
+  // atributes to object car
   String brand;
   String model;
   private String wheels;
