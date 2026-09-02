@@ -10,17 +10,13 @@ public class Classes {
 
   // constructor function
   Classes(String name, int age) {
-
     // "this" is a ref to class
-    this.name = name_;
-    this.age = age_;
+    this.name = name;
+    this.age = age;
   }
 
   public static void main(String[] args) {
-
     // to instance a class use new
     Classes Person = new Classes("John", 20);
-
   }
-
 }
