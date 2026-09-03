@@ -29,7 +29,7 @@ public class Inheritance extends Abstract {
         super.setBalance(oldBalance - value);
     }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Inheritance bank_01 = new Inheritance("BANK-0001", true);
 
         bank_01.deposit(100.00);

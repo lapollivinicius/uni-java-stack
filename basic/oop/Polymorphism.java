@@ -1,6 +1,6 @@
 package oop;
 
-public class Polymorphism extends Abstract {
+public class Polymorphism extends Abstract implements Interface {
 
     double tax = 0;
 
@@ -37,5 +37,11 @@ public class Polymorphism extends Abstract {
         bank_02.withdrawal(10);
 
         System.out.println(bank_02.getBalance());
+    }
+
+    @Override
+    public void checkTax() {
+        // this is a method from interface
+        System.out.println(getTax());
     }
 }

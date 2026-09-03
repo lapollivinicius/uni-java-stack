@@ -21,7 +21,7 @@ public class exercise_34 {
         return number;
     }
 
-    public static void main() {
+    public static void main(String[] args)  {
         exercise_34 myClass = new exercise_34();
 
         exercise_34.inc();

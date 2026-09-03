@@ -8,7 +8,7 @@ public class exercise_35 {
         return fibonacci(n-1) + fibonacci(n-2);
     }
 
-    static void main() {
+    public static void main(String[] args)  {
         for(int i = 1; i < 10; i++) {
             System.out.println(exercise_35.fibonacci(i));
         }
