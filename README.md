@@ -1,10 +1,10 @@
-# 🚀 Uni Java Stack | Study Repository
+# Uni Java Stack | Study Repository
 
-Welcome to my ultimate Java study repository! ☕️✨
+Welcome to my ultimate Java study repository! ☕
 
 This space is dedicated to my journey of learning **everything** related to Java, the Spring ecosystem, and software development. From the basic fundamentals of the language to advanced concepts and frameworks, this repo serves as my personal knowledge base, containing exercises, projects, and detailed notes.
 
-## 📚 Study Sources
+## Study Sources
 
 The knowledge gathered here comes from some of the best resources available:
 
@@ -14,7 +14,7 @@ The knowledge gathered here comes from some of the best resources available:
 
 ---
 
-## 📝 My Notes about Java and Java Stack
+## My Notes about Java and Java Stack
 
 ### Errors 
 
