@@ -1,4 +1,20 @@
-# This is my notes about java and java stack
+# 🚀 Uni Java Stack | Study Repository
+
+Welcome to my ultimate Java study repository! ☕️✨
+
+This space is dedicated to my journey of learning **everything** related to Java, the Spring ecosystem, and software development. From the basic fundamentals of the language to advanced concepts and frameworks, this repo serves as my personal knowledge base, containing exercises, projects, and detailed notes.
+
+## 📚 Study Sources
+
+The knowledge gathered here comes from some of the best resources available:
+
+- [**Loiane Training**](https://loiane.training/) - Comprehensive and well-structured courses for Java developers.
+- [**Dev.java**](https://dev.java/) - The official Java portal for documentation, tutorials, and best practices.
+- **Spring Courses on Udemy** - Deep diving into the Spring ecosystem and enterprise application development.
+
+---
+
+## 📝 My Notes about Java and Java Stack
 
 ### Errors 
 
