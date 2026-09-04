@@ -2,7 +2,7 @@ public class LoopII {
 
   public static void main(String[] args) {
 
-    // var with index ; condition ; increment
+    // var with variable ; test ; change
     // white condition was true, increment and block is run
     for (int i = 10; i > 0; i--) {
       System.out.println(i);
@@ -16,9 +16,11 @@ public class LoopII {
       }
     }
 
-    // recursion 
-    // ...
-
+    // multiple index
+    int x, y;
+    for (x = 1, y = 9; x < 10; x++, y--) {
+      System.out.println(x + "x" + y + "= " + (x*y));
+    }
 
   }
 }

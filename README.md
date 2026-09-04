@@ -66,7 +66,17 @@ TYPES
 
 ### Operators
 
-ARUTHMETIC
+ASSIGNMENT OPERATORS
+
+- = assignment a value
+- += add and assign
+- -= sub and assign
+- *= mul and assign
+- /= div and assign
+- ++ increment
+- -- decrement
+
+ARITHMETIC
 
 - add (+)
 - sub (-)
@@ -75,6 +85,8 @@ ARUTHMETIC
 - mod (%)
 - inc (++)
 - dev (--)
+
+NOTE: Java takes the type into account in some operations — be careful
 
 RELATIONAL
 
@@ -114,7 +126,7 @@ java is organized by files this way it order packages
 A package in java is named with domain + project (a path), exemple:
 
 ```
-com.name.domain.myproject.folder / files.java 
+com.domain.project.class -> files.java 
 ```
 
 and this create:
@@ -124,7 +136,7 @@ src
 └── com
     └── domain
         └── project
-            └── main.java
+            └── class.java
 ```
 
 

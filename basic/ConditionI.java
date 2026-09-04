@@ -26,6 +26,9 @@ public class ConditionI {
       System.out.println("YOU CANNOT VOTE");
     }
 
+    // ternary condition
+    String person = age >= 18 ? "Adult" : "Teen";
+
   }
 
 }

@@ -9,6 +9,9 @@ public class ConditionII {
     System.out.print("What day 0-6?: ");
     int weekDay = scan.nextInt();
 
+    System.out.print("What mouth 0-11?: ");
+    int mouth = scan.nextInt();
+
     scan.close();
 
     switch (weekDay) {
@@ -37,6 +40,18 @@ public class ConditionII {
           System.out.println("Invalid day");
         break;
     }
+
+    // switch expressions
+    int days = switch (mouth) {
+        case 0, 3 -> 31;
+        case 1 -> 28;
+        default -> {
+            System.out.println("invalid mouth");
+
+            // yield is a return inside a block
+            yield 0;
+        }
+    };
 
 
   }

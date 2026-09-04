@@ -19,6 +19,19 @@ public class LoopIII {
       }
       System.out.println("INDEX: " + i);
     }
+
+    // for named
+    outer:
+    for (int i = 10; i > 0; i--) {
+
+      System.out.println("TIMES " + i);
+
+      inner:
+      for (int j = 0; j <= 10; j++) {
+        if(j == 3) break outer; // break used the name to break specific for
+        System.out.println(i + "x" + j + "=" + (i*j));
+      }
+    }
   }
 
 }
