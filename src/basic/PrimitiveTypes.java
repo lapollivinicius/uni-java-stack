@@ -21,7 +21,7 @@ public class PrimitiveTypes {
     // literals
     int bin = 0b11010; // 0b (prefix)
     int hex = 0x1a; // 0x (prefix)
-    int oct = 032; // 0 (prefix)
+    int oct = 26; // 0 (prefix)
     int dec = 10;
 
     // separate using underscore
@@ -41,6 +41,8 @@ public class PrimitiveTypes {
     System.out.println(oct);
     System.out.println(dec);
     System.out.println(doc);
+
+
 
   }
 
