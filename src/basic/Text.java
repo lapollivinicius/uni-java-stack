@@ -1,5 +1,9 @@
 package src.basic;
 
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
+
 /** ABOUT STRING CLASS
  *  - Strings are immutables
  *  - JVM creates a pool (a set within heap called POOL)
@@ -70,6 +74,49 @@ public class Text {
             sB.append(i);
         }
         System.out.println(sB);
+
+        // FORMATING - using formating in java (concat)
+        String s = String.format("%s == %s = %b", a, b, (a == b));
+        System.out.println(s);
+
+        // similar to format without breakline (printf too)
+        System.out.format("%s == %s = %b \n", a, b, (a == b));
+
+        /*
+         * String
+         * - %s -> Strings
+         * - %10s -> 10 white spaces before string
+         * - %-10s -> align left with spaces
+         *
+         * Decimal
+         * - %d -> integer numbers
+         *
+         * Float/Double
+         * - %f -> double numbers
+         * - %.2f -> double with 2 places
+         */
+
+        // FORMATING - currency
+        Locale locale = new Locale("pt", "BR");
+
+        double num = 5300.20;
+
+        // NumberFormat is used to format numbers (based in locale)
+        // NumberFormat formatNumber = NumberFormat.getInstance();
+        NumberFormat formatNumber = NumberFormat.getCurrencyInstance(locale); // inc CURRENCY
+
+        // use method format to apply
+        System.out.println(formatNumber.format(num));
+
+        // this class can be modify
+        formatNumber.setGroupingUsed(false); // to remove decimal div
+        formatNumber.setMinimumFractionDigits(3); // to change decimal places
+        formatNumber.setCurrency(Currency.getInstance("EUR"));
+
+        // use Currency.getAvailableCurrencies to know availables
+        // use Locale.getAvailableLocale to know availables
+
+        System.out.println(formatNumber.format(num));
 
     }
 
