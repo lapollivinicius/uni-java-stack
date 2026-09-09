@@ -1,5 +1,6 @@
-package src.basic;
+package src.advanced;
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,12 +24,20 @@ public class Regex {
      *
      */
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
         printMatch("asdj983jaojda39031#*4yq983h4", "\\d([a-z])+");
 
         boolean v = validate("asd asd asd asd", ".*asd.*");
         System.out.println(v);
+
+        String s = replaceNumbers("\\d", "dsdasd8329dasdj123", "*");
+        System.out.println(s);
+
+        String[] tokens = separate("abc1efg4", "\\d");
+        System.out.println(Arrays.toString(tokens));
+
+        System.out.println(validateCPFFormat("111.222.333-44"));
 
     }
 
@@ -52,6 +61,32 @@ public class Regex {
         Matcher m = p.matcher(text);
         return m.matches(); // it considers the entire string
         // to search some part use m.find()
+    }
+
+    public static boolean validateCPFFormat(String cpf) {
+        String regex = "\\d{3}([\\s.])?\\d{3}([\\s.])?\\d{3}([\\s-])?\\d{2}";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(cpf);
+        return m.matches();
+    }
+
+    // similar to replaceAll
+    public static String replaceNumbers(String regex, String text, String c) {
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(text);
+
+        StringBuilder sB = new StringBuilder();
+        while(m.find()) {
+            // replace that was found
+            m.appendReplacement(sB, c);
+        }
+        //m.appendTail(sB);
+
+        return sB.toString();
+    }
+
+    public static String[] separate(String text, String regex) {
+        return text.split(regex);
     }
 
 
