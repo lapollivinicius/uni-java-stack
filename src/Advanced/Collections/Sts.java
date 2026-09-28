@@ -1,4 +1,4 @@
-package src.advanced.Collections;
+package src.Advanced.Collections;
 
 import java.util.HashSet;
 import java.util.Set;

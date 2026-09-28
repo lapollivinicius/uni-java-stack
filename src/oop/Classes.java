@@ -20,8 +20,6 @@ public class Classes {
     double height;
     double weight;
 
-
-
     // constructor function
     Classes(String name, int age) {
         // "this" is a ref to class
