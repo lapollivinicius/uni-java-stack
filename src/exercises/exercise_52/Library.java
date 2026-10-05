@@ -1,4 +1,4 @@
-package src.exercises.exercise_oop_02;
+package src.exercises.exercise_52;
 
 import java.util.ArrayList;
 import java.util.List;

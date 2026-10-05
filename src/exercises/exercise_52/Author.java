@@ -1,4 +1,4 @@
-package src.exercises.exercise_oop_02;
+package src.exercises.exercise_52;
 
 public class Author {
 

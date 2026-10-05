@@ -24,8 +24,6 @@ public class Enums {
         // to find some enum (return pos)
         System.out.println(WeekDaysEnum.valueOf("SUN").getNumDay());
 
-
-
     }
 
 }

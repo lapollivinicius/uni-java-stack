@@ -1,8 +1,8 @@
-package src.exercises.exercise_oop_02;
+package src.exercises.exercise_52;
 
 public class Main {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
         Library lib = new Library();
 
