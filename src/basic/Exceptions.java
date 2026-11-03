@@ -4,11 +4,11 @@ public class Exceptions extends Exception {
 
     public static void main(String[] args) throws Exception {
 
-        // throwable -> parent class (error and exception
+        //   throwable -> parent class (error and exception
         //   error - closes the program (unchecked)
         //   exception - there may be a possible treatment
-        //     runtimeExceiption (unchecked) unforeseen problem during execution
-        //     IOExceotion, SQLException (checked) problem anticipated during execution
+        //   runtimeExceiption (unchecked) unforeseen problem during execution
+        //   IOExceotion, SQLException (checked) problem anticipated during execution
 
         int[] numbers = {2, 4, 8, 16, 32};
         int[] divs = {2, 0, 2, 0};

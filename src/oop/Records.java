@@ -2,7 +2,7 @@ package src.oop;
 
 import java.util.Objects;
 
-// records are a simple way to create entities to storage datas
+// records are a simple way to create entities to storage data
 public record Records(String data1, int data2, double data3) {
 
     // it needs to be static
