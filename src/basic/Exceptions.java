@@ -1,5 +1,9 @@
 package src.basic;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Exceptions extends Exception {
 
     public static void main(String[] args) throws Exception {
@@ -38,6 +42,14 @@ public class Exceptions extends Exception {
                 System.out.println("this block will always be executed");
             }
         }
+
+        // try-with-resources
+        // close objects that needs to terminate
+        try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+            String linha = br.readLine();
+            System.out.println(linha);
+        }
+        // run the params and close when finished
 
     }
 

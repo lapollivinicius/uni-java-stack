@@ -1,10 +1,13 @@
 package src.io;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
-public class Modules {
+public class PathAndFiles {
 
     public static void main(String[] args) throws IOException {
 
@@ -21,7 +24,7 @@ public class Modules {
         System.out.println(p3);
 
         // PATH "join" paths
-        Path p4 = Path.of("src","io").resolve(p1);
+        Path p4 = Path.of("src", "io").resolve(p1);
         System.out.println(p4);
 
         // PATH get absolute path
@@ -48,7 +51,31 @@ public class Modules {
         // FILES to create a temp dir (needs a prefix)
         System.out.println(Files.createTempDirectory("_temp").toAbsolutePath());
 
+        // FILES to delete a file (delete)
+        // Files.deleteIfExists(p5.resolve("text.txt"));
 
+        // FILES to copy and paste (copy have options to copy behavior)
+        Files.createDirectories(p5.resolve("files_2"));
+        Files.copy(p5.resolve("text.txt"), p5.resolve("files_2", "text.txt"), StandardCopyOption.REPLACE_EXISTING);
+
+        // FILES to move a file
+        // Files.move(from, to);
+
+        // FILES to list dirs
+        DirectoryStream<Path> files = Files.newDirectoryStream(Path.of(""), "*.md");
+        for (Path file: files) {
+            System.out.println(Files.isDirectory(file) ? "> " + file : file);
+        }
+        // needs to close
+        files.close();
+
+        // FILE class
+        File file = new File("");
+        System.out.println(file.isFile());
+        System.out.println(file.isDirectory());
+        System.out.println(file.exists());
+        System.out.println(file.getAbsoluteFile());
+        System.out.println(file.getName());
 
 
     }
