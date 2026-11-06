@@ -56,7 +56,7 @@ public class PathAndFiles {
 
         // FILES to copy and paste (copy have options to copy behavior)
         Files.createDirectories(p5.resolve("files_2"));
-        Files.copy(p5.resolve("text.txt"), p5.resolve("files_2", "text.txt"), StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(p5.resolve("text.txt"), p5.resolve("files_2"), StandardCopyOption.REPLACE_EXISTING);
 
         // FILES to move a file
         // Files.move(from, to);
