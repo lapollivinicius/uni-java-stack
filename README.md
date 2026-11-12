@@ -6,7 +6,7 @@ This space is dedicated to my journey of learning **everything** related to Java
 
 ## Study Sources
 
-The knowledge gathered here comes from some of the best resources available:
+The knowledge gathered here comes from some of the best resources used:
 
 - [**Loiane Training**](https://loiane.training/) - Comprehensive and well-structured courses for Java developers.
 - [**Dev.java**](https://dev.java/) - The official Java portal for documentation, tutorials, and best practices.
