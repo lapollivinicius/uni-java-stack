@@ -16,19 +16,19 @@ public final class Square extends TwoDimensions {
 
     public static void main(String[] args) {
 
-        Square sqr = new Square();
-
-        sqr.setName("square");
-        sqr.setColor("red");
-        sqr.setArea_m2(25.0);
-        sqr.setEdges(4);
-
-        System.out.println(
-                sqr.getName() + " "
-                + sqr.getColor() + " "
-                + sqr.getArea_m2() + " "
-                + sqr.getEdges()
-        );
+//        Square sqr = new Square();
+//
+//        sqr.setName("square");
+//        sqr.setColor("red");
+//        sqr.setArea_m2(25.0);
+//        sqr.setEdges(4);
+//
+//        System.out.println(
+//                sqr.getName() + " "
+//                + sqr.getColor() + " "
+//                + sqr.getArea_m2() + " "
+//                + sqr.getEdges()
+//        );
 
     }
 

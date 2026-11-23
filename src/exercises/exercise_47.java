@@ -5,7 +5,7 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class exercise_71 {
+public class exercise_47 {
 
     public static void main(String[] args) {
 

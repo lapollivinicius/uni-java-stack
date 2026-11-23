@@ -35,14 +35,14 @@ public class Nested {
 
     // LOCAL / METHOD CLASS - they are class that can be accessed only inside methods
     // can access local variables (must be final), super att and parameters
-    public static void methodClass(String name) {
+    public static void methodClass() {
 
         class SayHey {
-            public String hi(name) {
-                return "hi, " + name;
+            public String hi() {
+                return "hi, ";
             }
-            public String hey(name) {
-                return "hey, " + name;
+            public String hey() {
+                return "hey, ";
             }
         }
 

@@ -1,6 +1,6 @@
 package src.exercises;
 
-public class exercise_73 {
+public class exercise_49 {
 
     Runtime runtime = Runtime.getRuntime();
 
@@ -36,7 +36,7 @@ public class exercise_73 {
 
     public static void main(String[] args) {
 
-        exercise_73 ex = new exercise_73();
+        exercise_49 ex = new exercise_49();
         System.out.println(ex.getStatsInstance());
 
     }

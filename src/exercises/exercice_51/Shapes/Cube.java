@@ -16,21 +16,21 @@ public final class Cube extends ThreeDimensions {
 
     public static void main(String[] args) {
 
-        Cube cb = new Cube();
-
-        cb.setName("cube");
-        cb.setColor("blue");
-        cb.setArea_m3(125.0);
-        cb.setExtrude(5);
-        cb.setEdges(12);
-
-        System.out.println(
-            cb.getName() + " "
-                + cb.getColor() + " "
-                + cb.getArea_m3() + " "
-                + cb.getExtrude() + " "
-                + cb.getEdges()
-        );
+//        Cube cb = new Cube();
+//
+//        cb.setName("cube");
+//        cb.setColor("blue");
+//        cb.setArea_m3(125.0);
+//        cb.setExtrude(5);
+//        cb.setEdges(12);
+//
+//        System.out.println(
+//            cb.getName() + " "
+//                + cb.getColor() + " "
+//                + cb.getArea_m3() + " "
+//                + cb.getExtrude() + " "
+//                + cb.getEdges()
+//        );
 
 
     }

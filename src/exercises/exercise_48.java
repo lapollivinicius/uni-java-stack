@@ -1,6 +1,6 @@
 package src.exercises;
 
-public class exercise_72 {
+public class exercise_48 {
 
     int ammo = 30;
 
