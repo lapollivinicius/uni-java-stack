@@ -1,10 +1,9 @@
-package src.Advanced.io;
+package src.Advanced.advanced.io;
 
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class IoNioAndNio2 {
@@ -39,8 +38,8 @@ public class IoNioAndNio2 {
 
     public static void main() throws IOException {
 
-        Path file = Path.of("src", "io", "files", "text.txt");
-        Path file2 = Path.of("src", "io", "files", "text2.txt");
+        Path file = Path.of("src", "advanced/io", "files", "text.txt");
+        Path file2 = Path.of("src", "advanced/io", "files", "text2.txt");
 
         // OUT - to write something
         FileWriter fw = new FileWriter(file.toFile(), Charset.defaultCharset());

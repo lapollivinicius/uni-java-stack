@@ -1,4 +1,4 @@
-package src.io;
+package src.Advanced.advanced.io;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class PathAndFiles {
         System.out.println(p3);
 
         // PATH "join" paths
-        Path p4 = Path.of("src", "io").resolve(p1);
+        Path p4 = Path.of("src", "advanced/io").resolve(p1);
         System.out.println(p4);
 
         // PATH get absolute path

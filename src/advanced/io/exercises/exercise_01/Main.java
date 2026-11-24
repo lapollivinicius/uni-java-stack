@@ -1,4 +1,4 @@
-package src.Advanced.io.exercises.exercise_01;
+package src.Advanced.advanced.io.exercises.exercise_01;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;

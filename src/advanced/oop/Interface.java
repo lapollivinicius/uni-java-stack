@@ -1,4 +1,4 @@
-package src.oop;
+package src.Advanced.advanced.oop;
 
 // interface is an abstract class with only abstract methods
 // it is used to implements behavior to classes (more once)

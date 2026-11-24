@@ -1,4 +1,4 @@
-package src.oop;
+package src.Advanced.advanced.oop;
 
 // this class cannot be instantiated
 public abstract class Abstract {

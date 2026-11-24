@@ -1,4 +1,4 @@
-package src.oop;
+package src.Advanced.advanced.oop;
 
 // use `extends` to define inheritance for the class.
 public class Inheritance extends Abstract {
