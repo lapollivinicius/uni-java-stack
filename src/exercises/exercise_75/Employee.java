@@ -1,12 +1,12 @@
 package src.exercises.exercise_75;
 
-public class Employer {
+public class Employee {
 
     private String name;
     private double wage;
     private Position position;
 
-    public Employer(String name, double wage, Position position) {
+    public Employee(String name, double wage, Position position) {
         this.name = name;
         this.wage = wage;
         this.position = position;

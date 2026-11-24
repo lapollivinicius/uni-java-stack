@@ -1,6 +1,6 @@
 package src.exercises.exercise_54;
 
-public class Manager extends Employer {
+public class Manager extends Employee {
 
     public Manager(String name, double salary) {
         super(name, salary);
