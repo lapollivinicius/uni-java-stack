@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+    <!-- appender is the destination -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoder is the translater -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!-- pattern to log with template (LAYOUT) -->
+            <Pattern>
+                %d{HH:mm:ss} %highlight(%-5level) %logger{32} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+    <!-- reference to appender in logger -->
+    <logger name="src.logging" level="info" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+</configuration>
+
+<!--
+    %red()	        red
+    %green()	    green
+    %yellow()	    yellow
+    %blue()	        blue
+    %cyan()	        cyan
+    %magenta()	    magenta
+    %white()	    white
+    %gray()	        gray
+    %highlight()	color by level
+-->
