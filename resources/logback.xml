@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <configuration>
-    <!-- appender is the destination -->
+    <!-- APPENDER is the destination -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoder is the translater -->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -11,10 +11,30 @@
             </Pattern>
         </encoder>
     </appender>
-    <!-- reference to appender in logger -->
-    <logger name="src.logging" level="info" additivity="false">
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>./src/logging/logs/file.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                > %d{HH:mm:ss} %-5level %logger{32} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <!-- ROOT is a base logger that can extends to children -->
+    <root level="warn">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <!-- LOGGER have a reference to appender in logger -->
+    <logger name="x" level="trace" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
+
+    <logger name="x" level="trace" additivity="false">
+        <appender-ref ref="FILE"/>
+    </logger>
+
 </configuration>
 
 <!--

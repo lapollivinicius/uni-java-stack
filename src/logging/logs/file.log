@@ -1,0 +1,10 @@
+> 17:18:04 TRACE x - This show stackTrace
+> 17:18:04 DEBUG x - this is debug
+> 17:18:04 INFO  x - this is an information
+> 17:18:04 WARN  x - this is a warning
+> 17:18:04 ERROR x - this is an error
+> 17:18:04 INFO  x - 10 + 10 = 30
+> 17:18:04 ERROR x - ERROR: / by zero
+java.lang.ArithmeticException: / by zero
+	at logging.App.main(App.java:25)
+> 17:18:04 INFO  x - show only if info is enabled
