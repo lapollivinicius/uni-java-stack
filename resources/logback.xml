@@ -35,6 +35,32 @@
         <appender-ref ref="FILE"/>
     </logger>
 
+    <!-- EXERCISE 87 -->
+    <appender name="toLogger01"  class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                %d{HH:mm:ss} %highlight(%-5level) %logger{32} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="exercises.exercise_87.Logger01" level="info" additivity="false">
+        <appender-ref ref="toLogger01"/>
+    </logger>
+
+    <appender name="toLogger02" class="ch.qos.logback.core.FileAppender">
+        <file>./src/exercises/exercise_87/logs/file.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                > %d{HH:mm:ss} %-5level %logger{32} - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="exercises.exercise_87.Logger02" level="info" additivity="false">
+        <appender-ref ref="toLogger02"/>
+    </logger>
+
 </configuration>
 
 <!--

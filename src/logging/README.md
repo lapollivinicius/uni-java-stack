@@ -132,4 +132,13 @@ Resources
 - `maxHistory`: Define a maximum length file
 - `totalSizeCap`: Set a file size
 
+Policies
+- TimeBasedRollingPolicy: based in time, use %d{time} to define interval log
+- SizeAndTimeBasedRollingPolicy: based in time and file size
+- TriggeringPolicy: based in events
+- SizeBasedTriggeringPolicy: based in events and size
+- FixedWindowRollingPolicy: deprecated 
+
+
+
 
